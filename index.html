@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HoriZon</title>
+    <title>Rodney Delacruz</title>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
@@ -11,16 +11,24 @@
 <body>
 
     <header>
-        <a href="#" class="logo">HoriZon.</a>
         <nav>
-            <a href="#Home" class="active"><i class="fas fa-home"></i>Home</a>
-            <a href="#About"><i class="fas fa-info-circle"></i>About</a>
-            <a href="#Education"><i class="fas fa-graduation-cap"></i>Education</a>
-            <a href="#Skills"><i class="fas fa-cogs"></i>Skills</a>
-            <a href="#Projects"><i class="fas fa-laptop-code"></i>Projects</a>
-            <a href="#Contact"><i class="fas fa-envelope"></i>Contact</a>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='#'>Rodney</a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="#Home" class="active">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
         </nav>
-    </header>
+        </header>
+    
 
     <section id="Home">
         <div class="home">
@@ -132,77 +140,62 @@
     </section>
 
     <section id="Projects">
-        <h1 class="project">Coming Soon.</h1>
+        <h1 class="project">Projects Coming Soon.</h1>
     </section>
 
     <section id="Contact">
         <div class="contact-container">
             <div class="contact-left">
                 <h2 class="section-heading">Contact</h2>
-                <div class="contact-item">
-                    <i class="fab fa-facebook-f contact-icon"></i>
-                    <p class="contact-info">Facebook: Rodney Delacruz</p>
+                <div class="social-media-container">
+                    <div class="social-media-item facebook">
+                        <a href=""><i class="fab fa-facebook-f contact-icon"></i></a>
+                        <span class="contact-text">Rodney Delacuz</span>
+                    </div>
+                    <div class="social-media-item twitter">
+                        <a href=""><i class="fab fa-twitter contact-icon"></i></a>
+                        <span class="contact-text">@rodney</span>
+                    </div>
+                    <div class="social-media-item instagram">
+                        <a href=""><i class="fab fa-instagram contact-icon"></i></a>
+                        <span class="contact-text">@rodneydelacruz</span>
+                    </div>
+                    <div class="social-media-item discord">
+                        <a href=""><i class="fab fa-discord contact-icon"></i></a>
+                        <span class="contact-text">faaazzz</span>
+                    </div>
+                    <div class="social-media-item github">
+                        <a href=""><i class="fab fa-github contact-icon"></i></a>
+                        <span class="contact-text">JustWrzosek</span>
+                    </div>
+                    <div class="social-media-item youtube">
+                        <a href=""><i class="fab fa-youtube contact-icon"></i></a>
+                        <span class="contact-text">Yuan La Muertez</span>
+                    </div>
+                    <div class="social-media-item whatsapp">
+                        <a href=""><i class="fa-brands fa-whatsapp contact-icon"></i></a>
+                        <span class="contact-text">+639948344075</span>
+                    </div>
+                    <div class="social-media-item phone">
+                        <a href=""><i class="fas fa-phone contact-icon"></i></a>
+                        <span class="contact-text">+63 994 834 4075</span>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <i class="fa-brands fa-whatsapp contact-icon"></i>
-                    <p class="contact-info">WhatsApp: +639948344075</p>
+                <div class="download-resume">
+                    <a href="#"><i class="fa-solid fa-download download-icon"></i>Download Resume</a>
                 </div>
-        
-                <div class="contact-item">
-                    <i class="fab fa-discord contact-icon"></i>
-                    <p class="contact-info">Discord: Faaazzz</p>
-                </div>
-        
-                <div class="contact-item">
-                    <i class="fab fa-instagram contact-icon"></i>
-                    <p class="contact-info">Instagram: @rodneydelacruz</p>
-                </div>
-        
-                <div class="contact-item">
-                    <i class="fab fa-twitter contact-icon"></i>
-                    <p class="contact-info">Twitter: @rodneydelacruz</p>
-                </div>
-        
-                <div class="contact-item">
-                    <i class="fab fa-github contact-icon"></i>
-                    <p class="contact-info">GitHub: JustWrzosek</p>
-                </div>
-        
-                <div class="contact-item">
-                    <i class="fab fa-youtube contact-icon"></i>
-                    <p class="contact-info">YouTube: Yuan La Muertez</p>
-                </div>
-        
-                <div class="contact-item">
-                    <i class="fas fa-phone contact-icon"></i>
-                    <p class="contact-info">Phone: +63 994 834 4075</p>
-                </div>
-        
-                <!-- Add more social media accounts here -->
-            </div>
-
-            <div class="download-resume">
-                <a href="link-to-your-resume.pdf" target="_blank"><i class="fas fa-download resume-icon"></i>Download Resume</a>
-            </div>
-
-            <div class="contact-right">
-                <h3 class="message-heading">Send a Message</h3>
-                <form id="message-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Enter your name" required>
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" placeholder="Enter your email address" required>
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
-                    <label for="message">Message:</label>
-                    <textarea id="message" rows="4" placeholder="Enter your message" required></textarea>
-                    <button type="submit">Send</button>
-                </form>
             </div>
         </div>
+        
     </section>
 
-    <a href="#About" class="button"><i class="fas fa-info-circle"></i>About Me</a>
+<footer>
+
+    <hr class="footer-line">
+
+    <p>@2023 Rodney Delacuz Portfolio. All Rights Reserved!</p>
+
+</footer>
 
     <script src="script.js"></script>
 </body>

@@ -142,6 +142,8 @@ section {
     height: 35vh;
     border-radius: 20px;
     margin-top: 31%;
+    border-bottom: 10px solid black;
+    box-shadow: 0 0 10px black;
 }
 
 .profile-pic {
@@ -189,6 +191,8 @@ section {
     background-color: whitesmoke;
     padding: 30px;
     border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
 }
 
 @media only screen and (max-width: 768px) {
@@ -198,9 +202,9 @@ section {
     }
     .image img {
         width: 450px;
-        max-width: 450px;
+        max-width: 400px;
         height: 30vh;
-        margin-top: 5%;
+        margin-top: 30%;
     }
     .profile-pic {
         margin-top: 10;
@@ -236,10 +240,6 @@ section {
         border-radius: 20px;
     }
 }
-
-
-
-
 
 section#About {
     color: #fff;

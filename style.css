@@ -201,7 +201,7 @@ section {
         align-items: center;
     }
     .image img {
-        width: 100%px;
+        width: 100%;
         max-width: 400px;
         height: 30vh;
         margin-top: 30%;

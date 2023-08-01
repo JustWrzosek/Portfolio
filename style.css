@@ -241,6 +241,13 @@ section {
     }
 }
 
+@media (max-width: 540px) and (max-height: 960px) {
+    .profile-pic {
+        margin-right: 30%;
+    }
+  }
+  
+
 section#About {
     color: #fff;
     padding: 50px 15px;

@@ -203,7 +203,7 @@ section {
     .image img {
         width: 100%;
         max-width: 400px;
-        height: 30vh;
+        height: auto;
         margin-top: 30%;
     }
     .profile-pic {

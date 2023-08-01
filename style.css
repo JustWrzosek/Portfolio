@@ -247,40 +247,55 @@ section#About {
     margin-top: 50px;
 }
 
-.section-heading {
-    font-size: 30px;
+.about-heading {
+    font-size: 60px;
     font-weight: 700;
-    margin-bottom: 30px;
+    padding-top: 200px;
 }
 
 .about-content {
     font-size: 20px;
     line-height: 1.6;
-    margin-bottom: 10px;
 }
 
 .about img {
     box-shadow: 0 0 5px black;
     border-radius: 20px;
     margin: 20px;
+    margin-top: 150px;
     width: 750px;
     height: auto;
 }
 
 @media only screen and (max-width: 768px) {
-    .about img {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-    }
-
-    .about-content {
-        font-size: 12px;
-    }
-
     .about {
-        margin-right: 50px;
-        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    .about-item {
+        max-width: 400px;
+        margin-bottom: 20px;
+        margin-right: 9%;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 0 5px black;
+    }
+
+    .about-content-text {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: 7%;
+    }
+
+    .about-heading {
+        font-size: 30px;
     }
 }
 
@@ -291,6 +306,11 @@ section#About {
     background-color: #11141a;
     padding: 40px;
     border-radius: 20px;
+}
+
+.education-heading {
+    font-size: 60px;
+    margin-bottom: 70px;
 }
 
 .education-image {
@@ -345,6 +365,11 @@ section#About {
     .education-description {
         font-size: 10px;
     }
+
+    .education-heading {
+        font-size: 30px;
+        margin-bottom: 70px;
+    }
 }
 
 #Skills {
@@ -356,7 +381,7 @@ section#About {
     margin: 0 auto;
 }
 
-.section-heading {
+.skills-heading {
     font-size: 60px !important; 
     font-weight: 700;
     margin-bottom: 100px !important;
@@ -418,15 +443,95 @@ section#About {
         max-width: 400px;
         height: auto;
     }
+
+    .skills-heading {
+        font-size: 30px;
+    }
 }
 
-.project {
+.projects-section {
+    color: white;
+    padding: 15px 15px;
+    padding-bottom: 400px;
+}
+
+.section-heading {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.project-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center; 
+}
+
+.project-tile {
+    background-color: rgb(206, 203, 203);
+    border-radius: 10px;
+    padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 25%;
-    font-size: 80px;
-    padding-bottom: 40%;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.project-image {
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-image img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-info {
+    text-align: center;
+    width: 100%; 
+    background-color: #11141ab9;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 10px; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.view-project-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.view-project-btn:hover {
+    background: black;
+}
+
+#Contact {
+    min-height: 80vh;
 }
 
 .contact-container {
@@ -438,6 +543,12 @@ section#About {
     position: relative;
 }
 
+.contact-heading {
+    font-size: 60px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
 .social-media-container {
     display: flex;
     flex-wrap: wrap;
@@ -445,14 +556,14 @@ section#About {
 }
 
 .social-media-item {
-    font-size: 60px; /* Adjust the icon size as needed */
-    width: 120px; /* Adjust the width as needed */
-    height: 120px; /* Adjust the height as needed */
+    font-size: 60px; 
+    width: 120px; 
+    height: 120px; 
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    flex-direction: column; /* Display the icon and text in a column */
+    flex-direction: column; 
     text-decoration: none;
     color: whitesmoke;
 }
@@ -483,7 +594,6 @@ section#About {
     justify-content: center;
     align-items: center;
     margin-top: 10%;
-    margin-bottom: 5%;
 }
 
 .download-resume a {
@@ -509,6 +619,10 @@ section#About {
 @media only screen and (max-width: 768px) {
     .contact-container {
         padding: 30px 15px;
+    }
+
+    .contact-heading {
+        font-size: 30px;
     }
 
     .social-media-item {

@@ -21,7 +21,7 @@ body {
     position: fixed;
     background-color: var(--color2);
     padding: 20px 60px;
-    z-index: 100;
+    z-index: 102;
 }
 
 .logo a {
@@ -124,115 +124,122 @@ section {
     color: #fff;
 }
 
-.home {
-    padding-left: 120px;
+#Home {
+    color: white;
     position: relative;
-    display: flex;
-    flex-direction: column; 
 }
 
-.home img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 0; 
-    top: 270px;
-    right: 140px;
-    margin-bottom: -50px; 
-    box-shadow: 0 0 10px black;
-    transition: 0.3s ease;
-}
-
-.home:hover img {
-    transform: scale(1.02);
-}
-
-.hi-intro {
-    padding-top: 20%;
-    bottom: 0;
-    font-size: 40px;
-    color: rgb(199, 198, 198);
-}
-
-.name {
-    font-weight: 900;
-    font-size: 50px;
-    padding-bottom: 7px;
-}
-
-.content {
-    font-size: 25px;
-    color: rgb(175, 175, 175);
-}
-
-
-@media only screen and (max-width: 1200px) {
-    .home img {
-        width: 250px;
-        height: 300px;
-    }
-
-    .name {
-        font-size: 40px;
-    }
-
-    .content {
-        font-size: 20px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .home {
-        padding-left: 15px;
-        align-items: center; /* Center content in small screens */
-    }
-
-    .home img {
-        width: 200px;
-        height: 200px;
-        position: static; /* Remove absolute positioning */
-        margin-top: 30px; /* Add margin to separate the image from text */
-    }
-
-    .hi-intro {
-        font-size: 30px;
-    }
-
-    .name {
-        font-size: 30px;
-    }
-
-    .content {
-        font-size: 13px;
-        text-align: center;
-        padding: auto;
-    }
-    
-    .home img {
-        margin-top: 30px; /* Add margin to separate the image from text */
-    }
-}
-
-.button {
-    text-decoration: none;
-    font-family: 'hussar', sans-serif;
-    font-size: 12px;
-    color: black;
-    background-color: white;
-    padding: 8px 15px;
-    border-radius: 50px;
-    transition: 0.5s;
+.home-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1; 
+    flex-direction: column;
+    height: 100vh;
 }
+
+.image img {
+    width: 175vh;
+    height: 35vh;
+    border-radius: 20px;
+    margin-top: 31%;
+}
+
+.profile-pic {
+    margin-top: -125px; /* Half of the profile image height */
+}
+
+.profile-pic img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.content-bottom-left {
+    order: 1; /* Change the order to 1 to push it below the profile image */
+}
+
+.content-bottom-right {
+    order: 3; /* Change the order to 3 to push it below the profile image */
+}
+
+.hi-intro {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: rgb(192, 190, 190);
+}
+
+.name {
+    font-size: 70px;
+    font-weight: 900;
+    margin-bottom: 20%;
+    text-shadow: 0 0 20px black;
+}
+
+.content-text {
+    color: black;
+    font-size: 30px;
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image img {
+        width: 450px;
+        max-width: 450px;
+        height: 30vh;
+        margin-top: 5%;
+    }
+    .profile-pic {
+        margin-top: 10;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 180px;
+        margin-right: 20%;
+        z-index: 100;
+
+    }
+    .content {
+        text-align: center;
+        padding: 20px;
+        margin-top: -80px;
+        z-index: 1;
+    }
+    .hi-intro {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: rgb(192, 190, 190);
+    }
+    .name {
+        font-size: 40px;
+        font-weight: 900;
+        margin-bottom: 20%;
+        text-shadow: 0 0 20px black;
+    }
+    .content-text {
+        font-size: 12px;
+        background-color: whitesmoke;
+        padding: 30px;
+        border-radius: 20px;
+    }
+}
+
+
+
+
 
 section#About {
     color: #fff;
@@ -251,6 +258,7 @@ section#About {
     font-size: 60px;
     font-weight: 700;
     padding-top: 200px;
+    margin-top: 60%;
 }
 
 .about-content {
@@ -296,6 +304,7 @@ section#About {
 
     .about-heading {
         font-size: 30px;
+        margin-top: 0;
     }
 }
 

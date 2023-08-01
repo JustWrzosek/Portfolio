@@ -128,7 +128,7 @@ section {
 #Home {
     color: white;
     position: relative;
-    background-color: #2c323d;
+    background-image: #2c323d;
     padding-bottom: 50px;
     border-bottom: 10px solid black;
 }
@@ -196,6 +196,7 @@ section {
 }
 
 .content-text {
+    max-width: 1000px;
     color: black;
     font-size: 30px;
     background-color: whitesmoke;
@@ -290,12 +291,20 @@ section#About {
     font-size: 60px;
     font-weight: 700;
     padding-top: 200px;
-    margin-top: 60%;
+    margin-top: 20%;
 }
 
 .about-content {
     font-size: 20px;
     line-height: 1.6;
+}
+
+.about-content-text {
+    background-color: whitesmoke;
+    margin-left: 35px;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .about img {
@@ -337,6 +346,10 @@ section#About {
     .about-heading {
         font-size: 30px;
         margin-top: 0;
+    }
+
+    .about-content-text {
+        margin-left: 40px;
     }
 }
 

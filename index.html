@@ -16,19 +16,18 @@
                 <li class='logo'><a href='#'>Rodney</a></li>
                 <input type='checkbox' id='check' />
                 <span class="menu">
-                    <li><a href="#Home" class="active">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Education">Education</a></li>
-                    <li><a href="#Skills">Skills</a></li>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#Home" class="active"><i class="fas fa-home nav-icon"></i>Home</a></li>
+                    <li><a href="#About"><i class="fas fa-info-circle nav-icon"></i>About</a></li>
+                    <li><a href="#Education"><i class="fas fa-graduation-cap nav-icon"></i>Education</a></li>
+                    <li><a href="#Skills"><i class="fas fa-cogs nav-icon"></i>Skills</a></li>
+                    <li><a href="#Projects"><i class="fas fa-laptop-code nav-icon"></i>Projects</a></li>
+                    <li><a href="#Contact"><i class="fas fa-envelope nav-icon"></i>Contact</a></li>
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
             </ul>
         </nav>
         </header>
-    
 
         <section id="Home">
             <div class="home-container">
@@ -351,5 +350,15 @@
 </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var lazyLoadInstance = new LazyLoad({
+            threshold: 200, // Load images 200 pixels before they come into view.
+            elements_selector: ".lazy", // Apply lazy loading to elements with the "lazy" class.
+            // More configuration options can be added here (optional).
+          });
+        });
+      </script>
+      
 </body>
 </html>

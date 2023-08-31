@@ -16,3 +16,26 @@ window.onscroll = () => {
         }
     });
 };
+
+
+
+// Add smooth scrolling behavior to navigation links
+  const navLinks = document.querySelectorAll('.nav-bar a');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+
+      const targetId = link.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        // Calculate the offset to scroll smoothly to the target section
+        const offsetTop = targetElement.offsetTop;
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });

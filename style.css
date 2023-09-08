@@ -674,6 +674,35 @@ section#About {
     margin-top: 10%;
 }
 
+.coffee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.coffee a {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.coffee a:hover {
+    background-color: black;
+}
+
+.coffee-icon {
+    margin-right: 10px;
+    font-size: 15px;
+
+}
+
 .download-resume a {
     display: inline-block;
     background-color: #4CAF50;
